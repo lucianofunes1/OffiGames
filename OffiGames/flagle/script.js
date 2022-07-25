@@ -1843,7 +1843,7 @@ async function AlertaFinNivel(tipo) {
     const alert = document.createElement('ion-alert');
     if(tipo == 0){
         alert.header = 'Mal';
-        alert.message = "No has adivinado el pais, puedes seguir jugando";
+        alert.message = "No has adivinado el pais era "+ PaisActual.pais +", puedes seguir jugando";
     }
     if(tipo == 1){
         alert.header = 'Bien';
