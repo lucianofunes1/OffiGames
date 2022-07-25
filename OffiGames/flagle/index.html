@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flagle</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+  <link rel="stylesheet" href="style.css"/>
+  <!--Para Hacer PWA--
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/png" href="assets/icon/namnam_logo_1024.png">
+  <link rel="apple-touch-icon" href="assets/icon/namnam_logo_1024.png">
+  <link rel="apple-touch-startup-image" href="assets/icon/namnam_logo_1024.png">
+  <link rel="manifest" href="./manifest.json">
+  <!--Para Hacer PWA-->
+  <script type="module">
+    import { modalController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+    window.modalController = modalController;
+
+    import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+    window.alertController = alertController;
+
+    import { menuController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+    window.menuController = menuController;
+  </script>-->
+</head>
+<body>
+    <ion-app>
+        <ion-header translucent>
+            <ion-toolbar>
+                <ion-buttons slot="primary">
+                    <ion-button color="danger" onclick="verPista()">
+                        <ion-label>PISTA</ion-label>
+                        <ion-icon name="help-circle-outline"></ion-icon>
+                    </ion-button>
+                </ion-buttons>
+            </ion-toolbar>
+
+        </ion-header>
+
+        <ion-content fullscreen class="ion-padding">
+
+            <ion-card>
+                <div class="container">
+                    <div id="ocultador1"></div>
+                    <div id="ocultador2"></div>
+                    <div id="ocultador3"></div>
+                    <div id="ocultador4"></div>
+                    <div id="ocultador5"></div>
+                    <div id="ocultador6"></div>
+                    <img id="flag-img">
+                </div>
+                <BR>
+                <BR>
+                <ion-searchbar placeholder="Buscar Pais"></ion-searchbar>
+                <BR>
+                <ion-list></ion-list>
+            </ion-card>
+
+        </ion-content>
+    </ion-app>
+
+    <script src="./script.js"></script>
+</body>
+</html>

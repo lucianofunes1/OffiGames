@@ -1,0 +1,80 @@
+
+ion-card {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+}
+
+#flag-img{
+
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    border: 1px solid #DDDDDD;
+    width: 100%;
+    height: 100%;
+    position:relative;
+}
+
+#ocultador1 {
+    float: left;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: black;
+    width: 33.3%;
+    height: 50%;
+}
+
+#ocultador2 {
+    float: left;
+    position: absolute;
+    left: 33.3%;
+    top: 0px;
+    background-color: black;
+    width: 33.3%;
+    height: 50%;
+}
+
+#ocultador3 {
+    float: left;
+    position: absolute;
+    left: 66.6%;
+    top: 0%;
+    background-color: black;
+    width: 33.5%;
+    height: 50%;
+}
+
+#ocultador4 {
+    float: left;
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    background-color: black;
+    width: 33.3%;
+    height: 50%;
+}
+
+#ocultador5 {
+    float: left;
+    position: absolute;
+    left: 33.3%;
+    top: 50%;
+    background-color: black;
+    width: 33.3%;
+    height: 50%;
+}
+
+#ocultador6 {
+    float: left;
+    position: absolute;
+    left: 66.6%;
+    top: 50%;
+    background-color: black;
+    width: 33.5%;
+    height: 50%;
+}
