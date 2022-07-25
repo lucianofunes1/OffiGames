@@ -1805,7 +1805,7 @@ function cargaPais(){
       var paisSeleccionado = Math.floor(Math.random() * arrPaises.length);
       let pais = arrPaises[paisSeleccionado];
 
-      document.getElementById("flag-img").src = "https://lucianofunes1.github.io/OffiGames/flagle/assets/"+ pais.codigo +".png";
+      document.getElementById("flag-img").src = "https://lucianofunes1.github.io/OffiGames/flagle/assets/uy.png";
 
       PaisActual = arrPaises[paisSeleccionado];
 
