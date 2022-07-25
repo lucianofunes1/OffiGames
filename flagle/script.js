@@ -1805,7 +1805,7 @@ function cargaPais(){
       var paisSeleccionado = Math.floor(Math.random() * arrPaises.length);
       let pais = arrPaises[paisSeleccionado];
 
-      document.getElementById("flag-img").src = "./assets/"+ pais.codigo +".png";
+      document.getElementById("flag-img").src = "https://lucianofunes1.github.io/OffiGames/flagle/assets/"+ pais.codigo +".png";
 
       PaisActual = arrPaises[paisSeleccionado];
 
@@ -1899,7 +1899,7 @@ function medirDistancia(paisElegido){
 
   let lista = document.getElementById("distancias")
 
-  lista.innerHTML = lista.innerHTML + "<ion-item><ion-avatar slot='start'><img src='./assets/"+ arrPaises[paisElegido].codigo +".png'/></ion-avatar><ion-label><h2>"+ arrPaises[paisElegido].pais +"</h2><h3>A "+ MedirDistancia(paisSeleccionado.lat, paisSeleccionado.lon, paisOculto.lat, paisOculto.lon) +" Km de Distancia</h3></ion-label></ion-item>";
+  lista.innerHTML = lista.innerHTML + "<ion-item><ion-avatar slot='start'><img src='https://lucianofunes1.github.io/OffiGames/flagle/assets/"+ arrPaises[paisElegido].codigo +".png'/></ion-avatar><ion-label><h2>"+ arrPaises[paisElegido].pais +"</h2><h3>A "+ MedirDistancia(paisSeleccionado.lat, paisSeleccionado.lon, paisOculto.lat, paisOculto.lon) +" Km de Distancia</h3></ion-label></ion-item>";
 
 }
 
