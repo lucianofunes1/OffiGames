@@ -1805,7 +1805,7 @@ function cargaPais(){
         var paisSeleccionado = Math.floor(Math.random() * arrPaises.length);
         let pais = arrPaises[paisSeleccionado];
 
-        document.getElementById("flag-img").src = "./assets/"+ pais.codigo +".png";
+        document.getElementById("flag-img").src = "assets/"+ pais.codigo +".png";
 
         PaisActual = arrPaises[paisSeleccionado];
 
