@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ReponerYa Consultas SQL ppp</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+    <script type="module">
+      import { alertController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+      window.alertController = alertController;
+
+      import { modalController } from 'https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/index.esm.js';
+      window.modalController = modalController;
+    </script>
+    <style>
+      :root {
+        --ion-safe-area-top: 20px;
+        --ion-safe-area-bottom: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <ion-app>
+      <ion-content fullscreen>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+            </ion-col>
+            <ion-col>
+              <img src="./logo.png" />
+              <ion-list lines="full" class="ion-no-margin">
+                <ion-item>
+                  <ion-label position="floating">Usuario</ion-label>
+                  <ion-input id="user" placeholder="Introduzca su Usuario" type="text"></ion-input>
+                </ion-item>
+                <BR>
+                <ion-item>
+                  <ion-label position="floating">Contraseña</ion-label>
+                  <ion-input id="password" placeholder="Introduzca la Contraseña" type="password" onkeypress="if(event.key === 'Enter') {validarPassword(user.value,this.value)}"></ion-input>
+                </ion-item>
+                <BR>
+                <BR>
+                <section>
+                  <ion-button onclick="validarPassword(user.value,password.value)" expand="block">INICIAR</ion-button>
+                </section>
+              </ion-list>
+            </ion-col>
+            <ion-col>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-content>
+    </ion-app>
+  </body>
+  <script src="./index.js"></script>
+</html>
