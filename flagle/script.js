@@ -1815,7 +1815,7 @@ function cargaPais(){
 
 function validarRespuesta(idRespuesta){
     if(PaisesYaElegidos.includes(idRespuesta)){
-        alert("Ya lo elegiste Tarado");
+        //alert("Ya lo elegiste Tarado");
     } else{
     if(idRespuesta === PaisActual.id){
         AlertaFinNivel(1)
