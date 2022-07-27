@@ -44,7 +44,7 @@ function cargaPais(){
     do{
         var paisSeleccionado = Math.floor(Math.random() * arrPaises.length);
         let pais = arrPaises[paisSeleccionado];
-        document.getElementById("flag-img").src = "./assets/"+ pais.codigo +".png";
+        document.getElementById("flag-img").src = "./assets/"+ pais.codigo.toUpperCase()  +".png";
         PaisActual = arrPaises[paisSeleccionado];
         Ocultadores = [{"id":"1"},{"id":"2"},{"id":"3"},{"id":"4"},{"id":"5"},{"id":"6"}];
         Ocultadores = Ocultadores.sort(function() {return Math.random() - 0.5});
