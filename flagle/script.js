@@ -1,10 +1,9 @@
-import { arrPaises } from "./paises.js";
+//import  arrPaises  from "./paises.js";
+//const arrPaises = require('./paises.js');
 
-window.onload = () => generaArrayPaises(arrPaises);
+window.onload = () => generaArrayPaises();
 
-function generaArrayPaises(data){
-    arrPaises = data;
-
+function generaArrayPaises(){
     let listPaises = document.querySelector('ion-list');
     let tempHTML = "";
 

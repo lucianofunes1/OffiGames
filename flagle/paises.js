@@ -1,4 +1,5 @@
-var arrPaises = [
+
+const arrPaises = [
     {
       "id": "0",
       "codigo": "BD",
